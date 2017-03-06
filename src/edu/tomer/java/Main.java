@@ -16,9 +16,11 @@ public class Main {
 
         Timer t1 = new Timer();
         t1.schedule(new TimerTask() {
+            String data = "Hello";
             @Override
             public void run() {
                 System.out.println("It's me!!!!!!");
+                System.out.println(this.data);
             }
         }, 0, 1000);
 
