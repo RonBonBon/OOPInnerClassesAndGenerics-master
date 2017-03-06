@@ -1,5 +1,6 @@
 package edu.tomer.java;
 
+import java.util.Timer;
 import java.util.TimerTask;
 
 public class Main {
@@ -12,6 +13,18 @@ public class Main {
                 t.run();
             }
         }
+
+        Drivable d = new Drivable() {
+            @Override
+            public void drive() {
+
+            }
+
+            @Override
+            public void turn(double degrees) {
+
+            }
+        };
 
         MyClass c = new MyClass();
 
