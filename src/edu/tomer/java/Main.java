@@ -14,6 +14,14 @@ public class Main {
             }
         }
 
+        Timer t1 = new Timer();
+        t1.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                System.out.println("It's me!!!!!!");
+            }
+        }, 0, 1000);
+
         Drivable d = new Drivable() {
             @Override
             public void drive() {
